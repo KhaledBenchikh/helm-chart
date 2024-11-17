@@ -1,3 +1,8 @@
 redis_port: ""
 redis_password: "password"
 redis_image: "redis:5.0.4"
+redis_PersistentVolumeClaim:
+  enabled: true
+  name: redis
+  storageClassName: redis
+  size: "1Gi"
